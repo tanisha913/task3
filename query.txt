@@ -1,0 +1,19 @@
+question 1
+
+select movie_name,sum(number_of_tickets) as total_orders from booking_order group by movie_name;
+
+question 2
+
+question 3
+
+select user_email, number_of_tickets,event_name  from booking_order where ( number_of_tickets >2 and event_id  IS NOT NULL);
+
+question 4
+
+select sum(number_of_tickets),show_detail from booking_order where show_detail like '%cinepolis%' or show_detail like '%e-square%' or show_detail like  '%carnival%' or show_detail like '%miraj%';
+
+question 5
+
+select * from booking_order where device_type like '%Web';
+
+question 6
